@@ -1,0 +1,73 @@
+<div class="container">
+  <h3>Login Form</h3>
+  <form>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username" required [(ngModel)]="user.username" name="username">
+    </div> <br>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="name" required [(ngModel)]="user.password" name="password">
+    </div>
+
+    <button type="button" class="btn btn-success" (click)="onLogin(user)">Submit</button>
+
+  </form>
+</div>
+<div class="container">
+  <h3>Add New User Form</h3>
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="username"
+        required [(ngModel)]="newUser.firstName" name="firstName">
+    </div> <br>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName"
+        required [(ngModel)]="newUser.lastName" name="lastName">
+    </div> <br>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email"
+        required [(ngModel)]="newUser.email" name="email">
+    </div> <br>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" class="form-control" id="username"
+        required [(ngModel)]="newUser.username" name="username">
+    </div> <br>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="name"
+        required [(ngModel)]="newUser.password" name="password">
+    </div> <br>
+    <div class="form-group">
+      <label for="role">Username</label>
+      <input type="text" class="form-control" id="role"
+        required [(ngModel)]="newUser.role" name="role">
+    </div> <br>
+
+    <button type="button" class="btn btn-success"
+      (click)="addNewUser(newUser)">Submit</button>
+
+  </form>
+</div>
+<div class="container">
+  <h3>Update and New User Form</h3>
+  <form>
+    <div class="form-group">
+      <label for="_id">_ID</label>
+      <input type="text" class="form-control" id="_id"
+        required [(ngModel)]="contact.IDNew" name="_id">
+    </div> <br>
+    <div class="form-group">
+      <label for="displayName">Display Name</label>
+      <input type="text" class="form-control" id="name"
+        required [(ngModel)]="contact.displayName" name="displayName">
+    </div>
+
+    <button type="button" class="btn btn-success" (click)="updateContact(contact)">Submit</button>
+
+  </form>
+</div>

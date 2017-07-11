@@ -1,0 +1,12 @@
+<app-contact></app-contact>
+<p class="center-fit" [appHighlightMe]="'#1976D2'">
+  Default
+</p>
+<p class="center-fit" appHighlightMe [toggleColor]="'orange'">
+  Orange
+</p>
+<p class="center-fit" appHighlightMe [toggleColor]="'#1976D2'">
+  Dashboard works! <br> <br>
+  Welcome, {{user.name | uppercase}} {{user.password}}<br>
+  <img src="assets/welcome.svg" alt="Welcome" class="img-fit">
+</p>
