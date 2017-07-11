@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  user: Object;
+  user: any;
   constructor() {
     this.user = {
       name: 'Parag',

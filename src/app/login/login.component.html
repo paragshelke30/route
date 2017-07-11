@@ -3,14 +3,14 @@
   <form>
     <div class="form-group">
       <label for="username">Username</label>
-      <input type="text" class="form-control" id="username" required [(ngModel)]="user.username" name="username">
+      <input type="text" class="form-control" id="username" required [(ngModel)]="user['username']" name="username">
     </div> <br>
     <div class="form-group">
       <label for="password">Password</label>
-      <input type="password" class="form-control" id="name" required [(ngModel)]="user.password" name="password">
+      <input type="password" class="form-control" id="name" required [(ngModel)]="user['password']" name="password">
     </div>
 
-    <button type="button" class="btn btn-success" (click)="onLogin(user)">Submit</button>
+    <button type="button" class="btn btn-success" (click)="onLogin()">Submit</button>
 
   </form>
 </div>
@@ -20,32 +20,32 @@
     <div class="form-group">
       <label for="firstName">First Name</label>
       <input type="text" class="form-control" id="username"
-        required [(ngModel)]="newUser.firstName" name="firstName">
+        required [(ngModel)]="newUser['firstName']" name="firstName">
     </div> <br>
     <div class="form-group">
       <label for="lastName">Last Name</label>
       <input type="text" class="form-control" id="lastName"
-        required [(ngModel)]="newUser.lastName" name="lastName">
+        required [(ngModel)]="newUser['lastName']" name="lastName">
     </div> <br>
     <div class="form-group">
       <label for="email">Email</label>
       <input type="email" class="form-control" id="email"
-        required [(ngModel)]="newUser.email" name="email">
+        required [(ngModel)]="newUser['email']" name="email">
     </div> <br>
     <div class="form-group">
       <label for="username">Username</label>
       <input type="text" class="form-control" id="username"
-        required [(ngModel)]="newUser.username" name="username">
+        required [(ngModel)]="newUser['username']" name="username">
     </div> <br>
     <div class="form-group">
       <label for="password">Password</label>
       <input type="password" class="form-control" id="name"
-        required [(ngModel)]="newUser.password" name="password">
+        required [(ngModel)]="newUser['password']" name="password">
     </div> <br>
     <div class="form-group">
       <label for="role">Username</label>
       <input type="text" class="form-control" id="role"
-        required [(ngModel)]="newUser.role" name="role">
+        required [(ngModel)]="newUser['role']" name="role">
     </div> <br>
 
     <button type="button" class="btn btn-success"
@@ -59,12 +59,12 @@
     <div class="form-group">
       <label for="_id">_ID</label>
       <input type="text" class="form-control" id="_id"
-        required [(ngModel)]="contact.IDNew" name="_id">
+        required [(ngModel)]="contact['IDNew']" name="_id">
     </div> <br>
     <div class="form-group">
       <label for="displayName">Display Name</label>
       <input type="text" class="form-control" id="name"
-        required [(ngModel)]="contact.displayName" name="displayName">
+        required [(ngModel)]="contact['displayName']" name="displayName">
     </div>
 
     <button type="button" class="btn btn-success" (click)="updateContact(contact)">Submit</button>
